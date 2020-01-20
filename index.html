@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Arkanoid</title>
+</head>
+<body>
+
+
+<script>
+    function animacija() {
+        let x = 20,
+            y = 20;
+
+        let loptica = document.createElement('div');
+        loptica.id = 'loptica';
+        loptica.style.position = 'absolute';
+        loptica.style.left = x + 'px';
+        loptica.style.top = y + 'px';
+        loptica.style.background = '#00aa00';
+        loptica.style.width = x + 'px';
+        loptica.style.height = y + 'px';
+        loptica.style.borderRadius = '100%';
+        document.body.appendChild(loptica)
+    }
+    animacija()
+
+</script>
+</body>
+</html>
